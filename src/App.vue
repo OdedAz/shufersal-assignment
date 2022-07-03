@@ -1,19 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container class="bv-example-row">
+      <b-row>
+        <b-col>
+          <ItemsBox />
+        </b-col>
+        <b-col>
+          <ShoppingCart />
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ItemsBox from "./components/ItemsBox.vue";
+import ShoppingCart from "./components/ShoppingCart.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ItemsBox,
+    ShoppingCart
+  },
+};
 </script>
 
 <style>
